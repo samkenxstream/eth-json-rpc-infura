@@ -14,6 +14,11 @@ module.exports = {
         ecmaVersion: 2020,
       },
     },
+
+    {
+      files: ['*.test.js'],
+      extends: ['@metamask/eslint-config-jest'],
+    },
   ],
 
   ignorePatterns: ['!.eslintrc.js', '!.prettierrc.js', 'dist/'],
